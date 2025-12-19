@@ -2,13 +2,13 @@
 
 namespace Tourze\CmsTopicBundle;
 
-use CmsBundle\CmsBundle;
+use Tourze\CmsBundle\CmsBundle;
 use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Tourze\BundleDependency\BundleDependencyInterface;
 use Tourze\EasyAdminMenuBundle\EasyAdminMenuBundle;
 
-class CmsTopicBundle extends Bundle implements BundleDependencyInterface
+final class CmsTopicBundle extends Bundle implements BundleDependencyInterface
 {
     public static function getBundleDependencies(): array
     {

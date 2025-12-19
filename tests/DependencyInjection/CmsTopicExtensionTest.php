@@ -13,7 +13,7 @@ use Tourze\PHPUnitSymfonyUnitTest\AbstractDependencyInjectionExtensionTestCase;
  * @internal
  */
 #[CoversClass(CmsTopicExtension::class)]
-class CmsTopicExtensionTest extends AbstractDependencyInjectionExtensionTestCase
+final class CmsTopicExtensionTest extends AbstractDependencyInjectionExtensionTestCase
 {
     private CmsTopicExtension $extension;
 

@@ -11,7 +11,7 @@ use Tourze\CmsTopicBundle\Entity\Topic;
 
 #[When(env: 'test')]
 #[When(env: 'dev')]
-class TopicFixtures extends Fixture
+final class TopicFixtures extends Fixture
 {
     public const TOPIC_SPORTS_REFERENCE = 'topic-sports';
 

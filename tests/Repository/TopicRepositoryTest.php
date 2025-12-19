@@ -15,7 +15,7 @@ use Tourze\PHPUnitSymfonyKernelTest\AbstractRepositoryTestCase;
  */
 #[CoversClass(TopicRepository::class)]
 #[RunTestsInSeparateProcesses]
-class TopicRepositoryTest extends AbstractRepositoryTestCase
+final class TopicRepositoryTest extends AbstractRepositoryTestCase
 {
     protected function createNewEntity(): Topic
     {

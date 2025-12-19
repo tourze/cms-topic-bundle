@@ -5,17 +5,10 @@ services:
     autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
     public: false
 
+  Tourze\CmsTopicBundle\Controller\:
+    resource: '../../Controller/'
   Tourze\CmsTopicBundle\Repository\:
     resource: '../../Repository/'
   Tourze\CmsTopicBundle\Service\:
     resource: '../../Service/'
-  Tourze\CmsTopicBundle\Controller\:
-    resource: '../../Controller/'
-    
-  # Explicitly register AdminMenu service for testing
-  Tourze\CmsTopicBundle\Service\AdminMenu:
-    public: true
-    
-  # Explicitly register TopicCrudController for testing
-  Tourze\CmsTopicBundle\Controller\Admin\TopicCrudController:
     public: true
